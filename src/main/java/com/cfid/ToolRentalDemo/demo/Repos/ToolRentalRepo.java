@@ -16,7 +16,7 @@ public class ToolRentalRepo {
 		private static final long serialVersionUID = 1L;
 
 		{
-        put("CHNS", new Tool("CHNS", "Chainsaw"	, "Stihl"	, 1.49, true, false	, true));
+        put("CHNS", new Tool("CHNS", "Chainsaw"		, "Stihl"	, 1.49, true, false	, true));
         put("LADW", new Tool("LADW", "Ladder"		, "Werner"	, 1.99, true, true	, false));
         put("JAKD", new Tool("JAKD", "Jackhammer"	, "DeWalt"	, 2.99, true, false	, false));
         put("JAKR", new Tool("JAKR", "Jackhammer"	, "Ridgid"	, 2.99, true, false	, false));

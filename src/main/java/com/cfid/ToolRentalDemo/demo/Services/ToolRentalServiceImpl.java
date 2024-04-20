@@ -1,5 +1,7 @@
 package com.cfid.ToolRentalDemo.demo.Services;
 
+import java.time.LocalDate;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,10 +13,12 @@ public class ToolRentalServiceImpl implements ToolRentalService {
 
 	@Autowired
 	ToolRentalRepo toolRentalRepo;
-	
+
 	@Override
-	public RentalAgreement checkout() {
-		// TODO checkout Implementation
+	public RentalAgreement checkout(String toolCode, LocalDate date, Integer rentalDays, Integer discount) {
+		// TODO Auto-generated method stub
 		return null;
 	}
+
+
 }
