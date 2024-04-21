@@ -14,7 +14,7 @@ public class GlobalExceptionHandler {
 	
     @ExceptionHandler(ToolRentalException.class)
     public ResponseEntity<String> handleCustomException(ToolRentalException ex) {
-    	logger.error("");
+    	logger.error(ex.getMessage());
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
     }
 

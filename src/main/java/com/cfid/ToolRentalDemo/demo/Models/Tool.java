@@ -1,16 +1,18 @@
 package com.cfid.ToolRentalDemo.demo.Models;
 
+import java.math.BigDecimal;
+
 public class Tool {
 	
 	private String toolCode ; 
 	private String toolType ;
 	private String brand;
-	private Double dailyCharge;
+	private BigDecimal dailyCharge;
 	private Boolean weekdayCharge;
 	private Boolean weekendCharge;
 	private Boolean holidayCharge;
 	
-	public Tool(String toolCode, String toolType, String brand, Double dailyCharge, Boolean weekdayCharge,
+	public Tool(String toolCode, String toolType, String brand, BigDecimal dailyCharge, Boolean weekdayCharge,
 			Boolean weekendCharge, Boolean holidayCharge) {
 		super();
 		this.toolCode = toolCode;
@@ -40,10 +42,10 @@ public class Tool {
 	public void setBrand(String brand) {
 		this.brand = brand;
 	}
-	public Double getDailyCharge() {
+	public BigDecimal getDailyCharge() {
 		return dailyCharge;
 	}
-	public void setDailyCharge(Double dailyCharge) {
+	public void setDailyCharge(BigDecimal dailyCharge) {
 		this.dailyCharge = dailyCharge;
 	}
 	public Boolean getWeekdayCharge() {
@@ -64,13 +66,15 @@ public class Tool {
 	public void setHolidayCharge(Boolean holidayCharge) {
 		this.holidayCharge = holidayCharge;
 	}
-	
-	public String getToolInfoString() {
-		return "Tools [toolCode=" + toolCode + ", toolType=" + toolType + ", brand=" + brand + ", dailyCharge="
+
+	@Override
+	public String toString() {
+		return "Tool [toolCode=" + toolCode + ", toolType=" + toolType + ", brand=" + brand + ", dailyCharge="
 				+ dailyCharge + ", weekdayCharge=" + weekdayCharge + ", weekendCharge=" + weekendCharge
 				+ ", holidayCharge=" + holidayCharge + "]";
 	}
-
+	
+	
 		
 	
 	
